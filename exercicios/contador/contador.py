@@ -3,12 +3,6 @@ from __future__ import division
 from collections import Counter
 
 
-"""
-Código inicial usado na Lista de Exercícios 1 do curso
-"Objetos Pythonicos" de Luciano Ramalho, Oficinas Turing.
-"""
-
-
 class Contador(object):
 
     def __init__(self):
