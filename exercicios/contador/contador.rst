@@ -71,7 +71,7 @@ No Windows, isso deve funcionar usando ``cls`` em vez de ``clear``, desde que
 o caminho até o executável ``python`` esteja no seu ``PATH`` (os instaladores
 de Python da ActiveState fazem essa gentileza para você automaticamente).
 
-Uma outra opção, se você estiver utilizando um Linux ou MacOS X é utilizar o 
+Uma outra opção, se você estiver utilizando um Linux ou MacOS X é utilizar o
 comando "watch" para ter um feedback constante no terminal:
 
     $ watch python testar_doc.py contador.rst
@@ -266,6 +266,7 @@ Extra
 
 Em sua implementação de ``porcentagem`` você invocou o método ``contagem``?
 Justifique a sua decisão.
+[valder] Não porque os dicionários no python tem o método count para contar as repetições de valores
 
 Exercício 1.5: o contador totalizador amigável
 ==============================================
@@ -294,3 +295,4 @@ Extra
 
 Neste exercício, faz diferença a ordem das referências às superclasses na
 declaração da classe ``ContadorTotalizadorAmigavel``? Justifique.
+[valder] No caso do incrementar SIM, pq eu conto o total de valores que o antigo incrementar salva em um dicionário.
