@@ -1,20 +1,20 @@
 # coding: utf-8
 from __future__ import division
-from collections import Counter
 
 
 class Contador(object):
 
     def __init__(self):
         self.valores = []
-        self.ocorrencias = {}
 
     def incrementar(self, items):
         self.valores.extend(list(items))
 
     def contagem(self, item):
-        self.ocorrencias = dict(Counter(self.valores))
-        return self.ocorrencias[item]
+        valor = self.valores.count(item)
+        if not valor:
+            raise KeyError(item)
+        return valor
 
 
 class ContadorAmigavel(Contador):
